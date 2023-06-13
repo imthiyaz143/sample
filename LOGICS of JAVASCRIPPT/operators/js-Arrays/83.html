@@ -1,0 +1,16 @@
+<html>
+    <body>
+        <script>
+            let n=Number(prompt("enter array length"));
+            let array=[]
+            let reverse=[]
+            for(let i=1;i<=n;i++){
+                array.push(Number(prompt("enter array elements")))
+            }document.write("orginal array ="+array+"<br>")
+            for(let j=array.length-1;j>=0;j--){
+                reverse.push(array[j])
+            }document.write( "reverse elements="+reverse)
+             
+        </script>
+    </body>
+</html>

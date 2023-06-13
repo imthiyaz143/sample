@@ -1,0 +1,21 @@
+<html>
+    <body>
+        <script>
+            let n=Number(prompt("enter array length"));
+            let array=[];
+            for(let i=1;i<=n;i++){
+                array.push(Number(prompt("enter array elements")))
+            }document.write("org array"+array+"<br>")
+            let even=[]
+            let odd=[]
+            for(let j=0;j<=n;j++){
+                if(array[j]%2==0){
+                    even.push(array[j])
+                }else {
+                    odd.push(array[j])
+                }
+            }document.write("even elements"+even+"<br>")
+            document.write("odd elements"+odd)
+            </script>
+    </body>
+</html>

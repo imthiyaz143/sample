@@ -1,0 +1,24 @@
+<html>
+
+<body>
+
+<script>
+    let x = Number(prompt("side 1"));
+    let y = Number(prompt("side 2 "));
+    let z = Number(prompt("side 3"));
+    if(x == y && y == z && z == x && x+y+z==180) 
+    {
+        alert("equalateral triangle");
+    }
+     else if(x == y && y != z && z != x && x+y+z==180 || x != y && y == z && z != x && x+y+z==180 || x != y && y != z && z == x && x+y+z==180 )
+      {
+        alert("isosless  triangle");}
+    else if(x != y && y != z && z != x && x+y+z==180) {
+        alert("scalane triangle");
+     } else {
+        alert("not a triangle")
+     } 
+
+</script>
+</body>
+</html>

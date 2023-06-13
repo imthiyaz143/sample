@@ -1,0 +1,24 @@
+<html>
+    <body>
+ <p id="demo"></p>
+
+        <script>
+  const person = {
+  fname:"John",
+  lname:"Doe",
+  age:25
+}; 
+
+let txt = "";
+for (let value in person) {
+   
+  txt += person[value] + " ";
+}
+
+document.getElementById("demo").innerHTML= txt;
+console.log(txt)
+
+  </script>
+        
+    </body>
+</html>

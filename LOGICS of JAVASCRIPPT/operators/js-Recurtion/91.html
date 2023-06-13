@@ -1,0 +1,22 @@
+<html>
+    <body>
+<script>
+    let n=Number(prompt("enter the value"));
+    let x=0;
+    let rem=0;
+    function rev()
+    {
+        if(n>0){
+         rem=n%10
+         x=x*10+rem
+         n=parseInt(n/10)
+        
+         rev()
+        }
+    }rev()
+        
+     document.write(x)
+    
+</script>
+    </body>
+</html>

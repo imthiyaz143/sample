@@ -1,0 +1,35 @@
+<html>
+
+<head>
+    <title> Nad Boy</title>
+</head>
+
+<body style="background-color:rgb(230, 25, 192)">
+    <h1 id="text" style="background-color:rgb(212, 229, 20);text-align:center">Welcome to Future Developer</h1>
+    <div>
+        <img id="img" src="../../../WhatsApp Image 2022-11-12 at 13.57.58.jpg" width="300px" alt="">
+    </div>
+    <div>
+        <button id="image" onclick="show()">clickme</button>
+        <button id="image" onclick="reset()">reset</button>
+    </div>
+
+
+    <h2 style="color:blue"> Senior Most Developer in institute = "SASTRI" </h2>
+    <pre>SASTRI makes some <em>guidelines</em> like we should come earlier like sharp 8AM up to 6PM
+        we can't come at that time.
+    </pre>
+</body>
+<script>
+    function show() {      
+            document.getElementById('img').src = "../../../NAD BOY .jpg"; 
+            document.getElementById('text').innerHTML = 'WELCOME TO NADBOY'
+    }
+    function reset(){
+        document.getElementById('img').src = '../../../WhatsApp Image 2022-11-12 at 13.57.58.jpg';
+        document.getElementById('text').innerHTML = 'Welcome to Future Developer'
+
+    }
+</script>
+
+</html>

@@ -1,0 +1,30 @@
+<html>
+    <body>
+        <script>
+            let n1=Number(prompt("enter array1 length"));
+            let array1=[];
+            let array2=[];
+            let common=[];
+            for(let i=1;i<=n1;i++){
+                array1.push((prompt("enter array1 elements ")))
+            }
+              let n2=Number(prompt("enter array2 length"));
+            for(let j=1;j<=n2;j++){
+                array2.push((prompt("enter array2 elements")))
+            }
+            document.write("first array ="+array1+"<br>")
+            document.write("second array="+array2+"<br>")
+           
+            for(let k=0;k<=array1.length;k++){
+                for(let l=0;l<=array2.length;l++){
+                    if(array1[k]==array2[l]){
+                         common.push(array2[l])
+                    }           
+                }
+            }    document.write("common elements ="+common)
+
+
+
+        </script>
+    </body>
+</html>

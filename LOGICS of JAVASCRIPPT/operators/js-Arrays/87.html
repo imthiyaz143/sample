@@ -1,0 +1,30 @@
+<html>
+<body>
+    <script>
+        let n = Number(prompt("enter array length"));
+        let array = [];
+        let duplicate = [];
+        
+        for (let i = 1; i <= n; i++) {
+            array.push(Number(prompt("enter array elements")))
+        } document.write("org array =" + array + "<br>")
+       
+        for (let j = 0; j < array.length; j++) {
+          let count=0;
+            for (let k = j+1; k < array.length;k++) {
+                
+                if (array[j] == array[k]) {
+                    count++;                
+                }
+                    
+                
+                }if(count==1){
+                    duplicate.push(array[j])
+                }
+           
+        } document.write("duplicate elements ="+ duplicate)
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<html>
+    <body>
+        <script>
+    let n = Number(prompt("enter the value"))
+    let sum = 0;
+    let temp = n;
+    while(n!= 0){
+      let j=1;
+      let  num = 1;
+     let rem = n% 10;
+      while(j<= rem){
+    num = num *j;
+        j++;
+    }
+        sum=sum+num;
+       n =parseInt(n/ 10);
+    }
+    if(sum==temp){
+        document.write( " strong number");
+    }else{
+        document.write(" not a strong number");
+    }
+       
+        </script>
+   </body>
+</html>

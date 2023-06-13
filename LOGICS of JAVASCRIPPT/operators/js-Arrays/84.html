@@ -1,0 +1,22 @@
+<html>
+    <body>
+        <script>
+            let n=Number(prompt("enter array length"));
+            let array=[]
+            for(let i=1;i<=n;i++){
+                array.push(Number(prompt("enter array elements")));
+            }document.write("orginal array ="+array+"<br>")
+            for(let j=0;j<array.length;j++){
+                for(let k=0;k<array.length;k++){
+                    if(array[j]<array[k]){
+                        let temp;
+                        temp=array[j]
+                        array[j]=array[k]
+                        array[k]=temp
+
+                    }
+                }
+            }document.write("ascending order elements="+array)
+        </script>
+    </body>
+</html>

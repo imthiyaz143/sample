@@ -1,0 +1,22 @@
+<html>
+    <body>
+        <script>
+            let n=Number(prompt("enter the value"));
+            let rem=0;
+            sum=0;
+            let temp=n;
+            do{
+                   rem=n%10
+                   n=parseInt(n/10)
+                   sum=sum*10+rem
+            }while(n>0)
+            if(sum==temp){
+                document.write("palindrom")
+            }else {
+                document.write(" not a palindrom")
+
+            }
+           
+        </script>
+    </body>
+</html>

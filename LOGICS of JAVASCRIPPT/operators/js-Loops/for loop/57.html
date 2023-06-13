@@ -1,0 +1,21 @@
+<html>
+
+<body>
+    <script>
+        let n = Number(prompt("enter the value"));
+        let text = "";
+        for (let i = 1; i <= n; i++) {
+            let counter = 0;
+            for (let j = 1; j <= i; j++) {
+                if (i % j == 0) {
+                    counter++;
+
+                }
+            } if (counter == 2) {
+                text=text+i+","
+            }
+        } document.write(text)
+    </script>
+</body>
+
+</html>
